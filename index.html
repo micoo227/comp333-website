@@ -7,33 +7,44 @@
   </head>
 
   <body>
-    
     <div id="navbar">
       <a href="#home">Home</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
     </div>
-    
-    <div class="background">
+
+    <div class="card background">
       <img src="monkey.jpg" />
     </div>
 
+    <div class="card card-text">
+      <div class="row align-items-center">
+        <div class="flex-2-items order-1">
+          <div class="padding">
+            <h1 class="card-title">What is RateMusicNow?</h1>
+            <h2 class="card-subtitle">sdfsdfsffsfsfsd</h2>
+          </div>
+        </div>
+        <div class="flex-2-items order-2"></div>
+      </div>
+    </div>
 
     <script>
-      window.onscroll = function() {stickyCheck()};
-      
+      window.onscroll = function () {
+        stickyCheck();
+      };
+
       var navbar = document.getElementById("navbar");
       var sticky_threshold = navbar.offsetTop;
-      
+
       function stickyCheck() {
         if (window.pageYOffset >= sticky_threshold) {
-          navbar.classList.add("sticky")
+          navbar.classList.add("sticky");
         } else {
           navbar.classList.remove("sticky");
         }
       }
-      </script>
-
+    </script>
   </body>
 
   <!---
