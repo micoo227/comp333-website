@@ -1,7 +1,10 @@
 body {
   font-family: fantasy;
   margin: 0;
+  padding: 0;
   text-align: left;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -17,9 +20,9 @@ div {
 img {
   position: relative;
   z-index: -1;
+  max-width: 100%;
   display: block;
-  width: 100%;
-  object-fit: cover;
+  border: 0;
 }
 
 #navbar {
@@ -89,9 +92,11 @@ img {
 }
 
 .background {
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100% !important;
+  height: 100%;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  object-fit: cover;
 }
 
 .card {
