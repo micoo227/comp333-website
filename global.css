@@ -78,14 +78,14 @@ container {
   top: 30vw;
   left: 61vw;
   color: whitesmoke;
-  font-size: 10vmin;
+  font-size: 6vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .home-subtitle {
-  font-size: 5vmin;
+  font-size: 3vmin;
 }
 
 .about-text {
