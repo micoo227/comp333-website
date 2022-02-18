@@ -1,3 +1,4 @@
+
 body {
   font-family: fantasy;
   margin: 0;
@@ -13,16 +14,27 @@ h1 {
   margin-bottom: .5rem;
 }
 
-div {
-  display: block;
+scaffold {
+  border: 1px dashed red;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 1rem;
+  border-bottom: 8px solid rgb(54, 54, 54);
+  margin-bottom: 1rem;
 }
 
-img {
-  position: relative;
-  z-index: -1;
-  max-width: 100%;
-  display: block;
-  border: 0;
+container {
+  width: 80%;
+  background-color: #3c69e7;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
 }
 
 #navbar {
@@ -46,17 +58,77 @@ img {
   color: rgb(197, 197, 197);
 }
 
-.order-1 {
-  order: 1;
+.about-text {
+  width: 35%;
+  font-family: sans-serif;
 }
 
-.order-2 {
-  order: 2;
+.faq-text, .pricing-text {
+  width: 100%;
+  font-family: sans-serif;
 }
 
-.flex-2-items {
-  flex: 0 0 50%;
-  max-width: 50%;
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text-scaffold {
+  display: flex;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.faq-title, .pricing-title {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.pricing-card-title {
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.faq-question {
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.faq-answer {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pricing-card {
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.about-content {
+  font-weight: 400;
 }
 
 .sticky {
@@ -99,12 +171,12 @@ img {
   object-fit: cover;
 }
 
-.card {
+.border {
   border-bottom: 8px solid rgb(54, 54, 54);
-  color: #030303;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
 }
